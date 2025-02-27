@@ -73,8 +73,6 @@ func (t *TCPTransport) startAcceptLoop() {
 	}
 }
 
-type Temp struct {}
-
 func (t *TCPTransport) handleConn(conn net.Conn) {
 	peer := NewTCPPeer(conn, true)
 
@@ -103,9 +101,6 @@ func (t *TCPTransport) handleConn(conn net.Conn) {
 		// }
 
 		// fmt.Printf("message %+v\n",buf[:n])
-
 	}
-
-
 }
 
